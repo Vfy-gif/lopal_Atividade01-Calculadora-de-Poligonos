@@ -3,6 +3,7 @@ package br.senai.sp.jandira.calculo_poligonos.dao;
 import java.util.Scanner;
 
 import br.senai.sp.jandira.calculo_poligonos.model.Triangulo;
+import br.senai.sp.jandira.calculo_poligonos.ui.Menu;
 
 public class TrianguloDao {
 
@@ -14,14 +15,16 @@ public class TrianguloDao {
 		
 		Triangulo triangulo = new Triangulo();
 		
-		System.out.print("Digite a medida da largura do Triangulo");
+		System.out.print("Digite a medida da largura do Triangulo: ");
 		
 		triangulo.setLargura(leitor.nextDouble());
 		
-		System.out.print("Digite a medida da altura do Triangulo");
+		System.out.print("Digite a medida da altura do Triangulo: ");
 		
 		triangulo.setAltura(leitor.nextDouble());
 		triangulo.exibirDados();
+
+		Menu.retornar();
 		
 	}
 }
